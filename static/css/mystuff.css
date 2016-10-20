@@ -1,0 +1,77 @@
+.work
+{
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.overlay
+{  
+  background:rgba(0,0,0,.75);
+  text-align:center;
+  opacity:0;
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+}
+/* button 1D9125 hover 096B09 */
+/* text DDDDDD gray */
+
+.work:hover .overlay 
+{
+  opacity:1;
+}
+
+.plus
+{  
+  font-family:Helvetica;
+  font-weight:900;
+  color:rgba(255,255,255,.85);
+  font-size:32px;
+}
+
+.hoverimg
+{
+  opacity: 1.0;
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+}
+
+/*.hoverimg:hover
+{
+  opacity: 0.4;
+}*/
+
+.workWrapper
+{
+  position: relative;
+  text-align: center;
+}
+
+.workWrapper:hover .imgdesc
+{
+  visibility: visible;
+  opacity: 1;
+}
+
+.workWrapper:hover .hoverimg
+{
+  opacity: 0.4;
+}
+
+.imgdesc
+{
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  top: 30%;
+  bottom: 0px;
+  font-family: Helvetica;
+  font-size: 2em;
+  font-weight: bold;
+  color:rgba(255,255,255,.85);
+  margin: auto;
+  visibility: hidden;
+  opacity: 0;
+   -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+}
